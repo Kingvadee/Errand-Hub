@@ -23,23 +23,18 @@ The primary purpose of this project is to create a user-friendly platform that f
 
 #### Frontend Technologies
 Stephen Joshua and Fabian Imoh are responsible for the frontend development. And will be utilizing:
-[![React.js Logo](https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg)](https://reactjs.org/)
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20" height="20" alt="React.js Logo">](https://reactjs.org/)
 #### Frontend Structure
 - React.js: `The frontend is built using React.js to create a dynamic and responsive user interface`.
   
 #### Backend Technologies
 The backend development is led by Rita Ejezie and Ojeifo David. And will be working with the following technologies:
-[![Node.js Logo](https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg)](https://nodejs.org/)
-[![Express.js Logo](https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg)](https://expressjs.com/)
-[![MongoDB Logo](https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png)](https://www.mongodb.com/)
-![Mongoose Logo](https://raw.githubusercontent.com/devicons/devicon/master/icons/mongoose/mongoose-original.svg)
-![Redis Logo](https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg)
-![Python Logo](https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg) `for specific backend functionalities`
-#### Backend Structure
-- Node.js & Express.js: `Responsible for handling server-side logic and API endpoints`.
-- MongoDB & Mongoose: `Used for data storage and retrieval, ensuring a scalable and efficient database structure`.
-- Redis: `Employed for caching and optimizing specific backend operations`.
-- Python: `Integrated for specific backend functionalities requiring Python scripts`.
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="20" height="20" alt="Node.js Logo">](https://nodejs.org/)
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" width="20" height="20" alt="Express.js Logo">](https://expressjs.com/)
+[<img src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" width="20" height="20" alt="MongoDB Logo">](https://www.mongodb.com/)
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongoose/mongoose-original.svg" width="20" height="20" alt="Mongoose Logo">](https://mongoosejs.com/)
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" width="20" height="20" alt="Redis Logo">](https://redis.io/)
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20" height="20" alt="Python Logo">](https://www.python.org/)
 
 ## Installation :accessibility: 💻🖱️
 ##### 🧰 To set up and run the Courier Management System Web Application locally, follow these steps:
