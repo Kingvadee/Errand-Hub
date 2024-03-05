@@ -1,9 +1,9 @@
 # Errand Hub🚚📦🌍
 ### Authors👩‍💻👨‍💻👩‍💻👨‍💻:
-[Rita Ejezie](https://github.com/Rita2024) - Backend Developer
-[Stephen Joshua](https://github.com/Joshpee22) - Frontend Developer
-[Fabian Imoh](https://github.com/Fabianphilip) - Frontend Developer
-[Ojeifo David](https://github.com/Kingvadee) - Backend Developer
+[Rita Ejezie](https://github.com/Rita2024) - Backend Developer \n
+[Stephen Joshua](https://github.com/Joshpee22) - Frontend Developer \n
+[Fabian Imoh](https://github.com/Fabianphilip) - Frontend Developer \n
+[Ojeifo David](https://github.com/Kingvadee) - Backend Developer \n
 
 ### Project Overview📃
 Welcome to our Courier Management System Web Application!💻🚀
