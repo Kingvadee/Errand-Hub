@@ -1,4 +1,4 @@
-## Courier Management System Web Application
+# Errand Hub🚚📦🌍
 ### Authors👩‍💻👨‍💻👩‍💻👨‍💻:
 [Rita Ejezie](https://github.com/Rita2024) - Backend Developer
 [Stephen Joshua](https://github.com/Joshpee22) - Frontend Developer
