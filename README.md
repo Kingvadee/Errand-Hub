@@ -1,4 +1,5 @@
 # Errand Hub🚚📦🌍
+# ![images/Errand-Hub_logo](https://private-user-images.githubusercontent.com/125440789/310174676-1f8556da-810a-43b4-88c5-a1f006233c22.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2NTIzNzMsIm5iZiI6MTcwOTY1MjA3MywicGF0aCI6Ii8xMjU0NDA3ODkvMzEwMTc0Njc2LTFmODU1NmRhLTgxMGEtNDNiNC04OGM1LWExZjAwNjIzM2MyMi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNVQxNTIxMTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03N2Y1Nzc1ZGYzOGZhY2ZhNTg3MzdjOTZhYTUxZTJkYjVmNmM5MmJiZGI2ODJlNDZiNDEwMTUxNmM3OWQ2OTg0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.pXFrHFyLXbED_TJBK4Uq-TfnGb70JBe0n0l9a3whxMM)
 ### Authors👩‍💻👨‍💻👩‍💻👨‍💻:
 - [Rita Ejezie](https://github.com/Rita2024) - Backend Developer 
 - [Stephen Joshua](https://github.com/Joshpee22) - Frontend Developer 
