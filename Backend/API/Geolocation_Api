@@ -1,0 +1,20 @@
+// Replace 'YOUR_API_KEY' with your actual Google Maps API key
+const apiKey = 'YOUR_API_KEY';
+const address = '1600 Amphitheatre Parkway, Mountain View, CA';
+
+// Construct the API URL for geocoding
+const apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apiKey}`;
+
+// Make a request to the API
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    // Extract latitude and longitude from the API response
+    const location = data.results[0].geometry.location;
+    const latitude = location.lat;
+    const longitude = location.lng;
+
+    // Use latitude and longitude in your courier service website
+    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+  })
+  .catch(error => console.error('Error fetching geolocation:', error));
