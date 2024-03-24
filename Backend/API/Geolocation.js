@@ -5,7 +5,7 @@ const apiUrl = `https://geocoding-api.open-meteo.com/v1/search?name=Lagos&count=
 fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
-      throw new Error(HTTP error! Status: ${response.status});
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
     return response.json();
   })
@@ -18,7 +18,7 @@ fetch(apiUrl)
       const longitude = location.lng;
 
       // Using latitude and longitude in courier service website
-      console.log(Latitude: ${latitude}, Longitude: ${longitude});
+      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
       
       // Send latitude and longitude to your server for further processing
       // Example: sendLocationToServer(latitude, longitude);
