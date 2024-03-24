@@ -4,6 +4,7 @@ for password hashing in the auth.js file.
 */
 const express = require('express');
 const bcrypt = require('bcrypt'); // bcrypt for password hashing
+const jwt = require('jsonwebtoken'); // JWT for token generation
 
 const router = express.Router();
 
@@ -14,13 +15,16 @@ const User = require('./models/User');
 router.post('/signup', async (req, res) => {
   const { username, email, password } = req.body;
 
-  // Hash password before saving
-  const hashedPassword = await bcrypt.hash(password, 10);
-
   try {
+    // Hash password before saving
+    const hashedPassword = await bcrypt.hash(password, 10);
     const user = new User({ username, email, password: hashedPassword });
     await user.save();
-    res.json({ message: 'User created successfully!' });
+
+    // Generate JWT token
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+
+    res.json({ message: 'User created successfully!', token }); // Send token in response
   } catch (err) {
     res.status(400).json({ message: 'Error creating user' });
   }
@@ -42,8 +46,11 @@ router.post('/signin', async (req, res) => {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
 
+    // Generate JWT token upon successful login
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+
     // Login successful (implementation depends on your app)
-    res.json({ message: 'Login successful!' });
+    res.json({ message: 'Login successful!', token }); // Send token in response
   } catch (err) {
     res.status(500).json({ message: 'Server error' });
   }
@@ -55,4 +62,4 @@ router.get('/logout', (req, res) => {
   res.json({ message: 'Logged out successfully!' });
 });
 
-module.exports = router; 
+module.exports = router;
