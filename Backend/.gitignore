@@ -1,0 +1,10 @@
+ ../node_modules/@socket.io/
+        ../node_modules/@types/cookie/
+        ../node_modules/@types/cors/
+        ../node_modules/base64id/
+        ../node_modules/engine.io-parser/
+        ../node_modules/engine.io/
+        ../node_modules/socket.io-adapter/
+        ../node_modules/socket.io-parser/
+        ../node_modules/socket.io/
+        ../node_modules/ws/
