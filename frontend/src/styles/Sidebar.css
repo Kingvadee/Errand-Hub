@@ -1,0 +1,32 @@
+#sidebar {
+    width: 25%;
+  }
+  #sidebar .pro-sidebar {
+    height: 100%;
+  }
+  #sidebar .closemenu {
+    color: #000;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    line-height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 22px;
+    top: 55px;
+    cursor: pointer;
+  }
+  #sidebar .pro-sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+  #sidebar .pro-sidebar.collapsed {
+    width: 80px;
+    min-width: 80px;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    html {
+      overflow: hidden;
+    }
+  }
