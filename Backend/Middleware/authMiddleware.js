@@ -1,13 +1,57 @@
-//authMiddleware
-const express = require('express');
-const router = express.Router();
-const authMiddleware = require('./authMiddleware'); // Import middleware
+require('dotenv').config()
+const jwt = require('jsonwebtoken')
 
-// Example route that requires authentication
-router.get('/user', authMiddleware.verifyJWT, (req, res) => {
-  // Access user data from request object (req.user)
-  const userData = req.user;
-  res.json({ message: 'Authenticated user', user: userData });
-});
+function authorizeToken(req, res, next) {
+  const authHeader = req.headers.authorization
+  const token = authHeader && authHeader.split(' ')[1]
 
-module.exports = router;
+  if (token == null) {
+    return res.status(401).json({
+      status: 'failure',
+      message: 'Unauthorized',
+      data: {},
+    })
+  }
+
+  jwt.verify(token, process.env.JWT_SECRET, (err, departmentInfo) => {
+    if (err) {
+      return res.status(403).json({
+        status: 'failure',
+        message: 'Invalid access token',
+        data: {},
+      })
+    }
+    req.department = departmentInfo
+    next()
+  })
+}
+
+function authorizeDeliveryAgentToken(req, res, next) {
+  const authHeader = req.headers.authorization
+  const token = authHeader && authHeader.split(' ')[1]
+
+  if (token == null) {
+    return res.status(401).json({
+      status: 'failure',
+      message: 'Unauthorized',
+      data: {},
+    })
+  }
+
+  jwt.verify(token, process.env.JWT_SECRET, (err, deliveryAgentInfo) => {
+    if (err) {
+      return res.status(403).json({
+        status: 'failure',
+        message: 'Invalid access token',
+        data: {},
+      })
+    }
+    req.deliveryAgent = deliveryAgentInfo
+    next()
+  })
+}
+
+module.exports = {
+  authorize: authorizeToken,
+  authorizeDeliveryAgent: authorizeDeliveryAgentToken,
+}
