@@ -15,9 +15,9 @@ async function sendEmail(refId, courierReceiverEmail, trackLoc) {
     })
 
     let info = await transporter.sendMail({
-      from: '"Courier TnM" <couriertnm@gmail.com>', // sender address
+      from: '"Errand-Hub" <errandhub21@gmail.com>', // sender address
       to: courierReceiverEmail, // list of receivers
-      subject: 'Update in your courier via Courier TnM', // Subject line
+      subject: 'Update in your courier via Errand-Hb', // Subject line
       html: `<p>Courier with reference id <b>${refId}</b> has an update.</p><p>You can track your courier through using this reference id.</p>
       <p>Track your courier <a href='http://${trackLoc}/track/courier'>here</a></p><br /><br />
       <p>Regard</p>`,
